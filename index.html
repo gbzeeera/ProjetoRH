@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Envio Antecedentes Criminais</title>
+    <link rel="stylesheet" href="../Antecedentes/misc/styles.css">
+    <link rel="icon" href="misc/Ico.png" type="image">
+</head>
+<body>
+    
+    
+    <form action="controller/FormularioController.php" method="post" enctype="multipart/form-data" class="form">
+        <h2>Formulário de Envio Antecedentes Criminais</h2>
+        
+       
+        <div class="logo">
+            <img src="./misc/bg.png">
+        </div>
+        
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Insira aqui seu nome completo">
+        </div>
+
+        <div class="form-group">
+            <label for="matricula">Matricula:</label>
+            <input type="number" id="matricula" name="matricula" required placeholder="Insira aqui seu numero de matricula">
+        </div>
+
+    
+        <div class="form-group">
+            <label for="unidade">Selecione sua unidade:</label>    
+            <select name="unidade" id="unidade" required>
+                <option value="Unidade Betim">Unidade Betim</option>
+                <option value="Escola Batista de Idiomas - BH">Escola Batista de Idiomas - BH</option>
+                <option value="Unidade Uberlândia">Unidade Uberlândia</option>
+                <option value="Unidade Nova Contagem">Unidade Nova Contagem</option>
+                <option value="Núcleo Batista Mineiro de Socialização - BH">Núcleo Batista Mineiro de Socialização - BH</option>
+                <option value="Escola de Esportes - Unidade Floresta - BH">Escola de Esportes - Unidade Floresta - BH</option>
+                <option value="Escola Batista de Música - BH">Escola Batista de Música - BH</option>
+                <option value="Escola de Esportes - Unidade Betim">Escola de Esportes - Unidade Betim</option>
+                <option value="Faculdade Batista de Minas Gerais - BH">Faculdade Batista de Minas Gerais - BH</option>
+                <option value="Unidade Buritis I - BH">Unidade Buritis I - BH</option>
+                <option value="Unidade Séries Iniciais - BH">Unidade Séries Iniciais - BH</option>
+                <option value="Escola de Esportes - Unidade Ouro Branco">Escola de Esportes - Unidade Ouro Branco</option>
+                <option value="Unidade Buritis II - BH">Unidade Buritis II - BH</option>
+                <option value="Unidade Série Finais - BH">Unidade Série Finais - BH</option>
+                <option value="Unidade Juiz de Fora">Unidade Juiz de Fora</option>
+                <option value="Unidade Castelo - BH">Unidade Castelo - BH</option>
+                <option value="Instituto Hexis - BH">Instituto Hexis - BH</option>
+                <option value="Unidade Sete Lagoas">Unidade Sete Lagoas</option>
+                <option value="Unidade Vila Mariana - São Paulo">Unidade Vila Mariana - São Paulo</option>
+                <option value="Unidade Praia - João Pessoa">Unidade Praia - João Pessoa</option>
+                <option value="Unidade Porto Alegre">Unidade Porto Alegre</option>
+                <option value="Unidade Alphaville - Nova Lima">Unidade Alphaville - Nova Lima</option>
+                <option value="Poços de Caldas">Poços de Caldas</option>
+                <option value="Granja Marileusa - Uberlândia">Granja Marileusa - Uberlândia</option>
+                <option value="Ida Nelson - Manaus">Ida Nelson - Manaus</option>
+                <option value="Volta Redonda- Rio de Janeiro">Volta Redonda- Rio de Janeiro</option>
+                <option value="Castelo II">Castelo II</option>
+                <option value="João Pessoa II">João Pessoa II</option>
+                <option value="Unidade Lagoa Santa">Unidade Lagoa Santa</option>
+                <option value="Unidade Vila Velha">Unidade Vila Velha</option>
+                <option value="Obra - Colégio Batista Mineiro">Obra - Colégio Batista Mineiro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="arquivo_pdf">Arquivo PDF:</label>
+            <input type="file" id="arquivo_pdf" name="arquivo_pdf" accept=".pdf" required>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</body>
+</html>
